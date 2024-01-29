@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c35;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #h2 {
+            font-size: 24px;
+            margin: 20px 0; /* Adjusted margin for top and bottom */
+            text-align: center; /* Centering the text */
+        }
+
+        button {
+            font-size: 18px;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: #fb9a2a;
+            color: #282c35;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #717b81;
+        }
+    </style>
+</head>
+<body>
+    <button id="playSoundButton">Nur für dich!</button>
+    <audio id="myAudio">
+        <source src="fart-noises-83359.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    
+    <script>
+        // JavaScript to handle button click and play sound
+        document.getElementById('playSoundButton').addEventListener('click', function() {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
